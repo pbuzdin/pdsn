@@ -23,14 +23,6 @@ input, textarea {
   position: relative;
   transition: var(--hover-transition);
   z-index: 2;
-  &:focus {
-    background-color: var(--white);
-  }
-  &:focus + label {
-    opacity: 1;
-    pointer-events: auto;
-    transform: translateY(-120%);
-  }
 }
 
 ::-webkit-input-placeholder {
@@ -57,13 +49,10 @@ input, textarea {
    line-height: normal;
 }
 
-label
-{
-  font-size: .875rem;
-  font-weight: 800;
-  color: var(--white);
-  background-color: var(--primary);
-  border-radius: var(--border-radius);
+label {
+  /* color: var(--white); */
+  /* background-color: var(--primary); */
+  /* border-radius: var(--border-radius); */
   padding: var(--spacing-extra-small) var(--spacing-small);
   position: absolute;
   left: 0;
@@ -73,4 +62,60 @@ label
   line-height: 1;
   transition: var(--hover-transition);
   z-index: 2;
+}
+.products label {
+  position: relative;
+  left: auto;
+  top: auto;
+  opacity: 1;
+  pointer-events: all;
+  display: block;
+  cursor: pointer;
+  padding-top: 60px;
+}
+.products input,
+.products input:focus {
+  background: inherit;
+  box-shadow: inherit;
+  width: 20px;
+  height: 20px;
+}
+.products input[type=checkbox]:checked + label {
+  color: var(--white);
+  background-color: var(--primary);
+}
+.products input[type=checkbox] + label {
+  transform: none;
+}
+.products input[type=checkbox] + label > .selector {
+  padding: var(--spacing-extra-small) var(--spacing-small);
+  transform: translateX(100%);
+  transition: transform 0.3s;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 290px;
+  color: var(--white);
+  background-color: var(--primary);
+  margin-top: 60px;
+}
+.products input[type=checkbox]:checked + label > .selector {
+  /* opacity: 1;
+  pointer-events: all; */
+  transform: translateX(0);
+}
+.product {
+  padding: 0;
+  border-width: 1px;
+}
+.product .selector input,
+.product .selector input + label {
+  padding: var(--spacing-extra-small) var(--spacing-small);
+  transition: background-color 0.3s;
+}
+
+.product .selector input:checked + label {
+  color: black;
+  background-color: var(--white);
 }
