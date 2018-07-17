@@ -3,8 +3,8 @@
     <h2 class="f2 b lh-title mt0 mb2">{{.heading}}</h2>
     <p class="mt0 mb4 mw-100">{{.description}}</p>
     <form>
-      <div class="flex-ns mhn2-ns mb3">
-        <fieldset class="w-33-ns product">
+      <div class="flex-ns mhn2-ns">
+        <fieldset class="ma2 w-33-ns product">
           <input class="ma3 absolute z-5" type="checkbox" id="product1" value="{{.text1}}">
           <label for="product1" class="overflow-hidden">
             <div class="overflow-hidden product-image" style="max-height: 280px">
@@ -45,7 +45,7 @@
             </div>
           </label>
         </fieldset>
-        <fieldset class="w-33-ns product">
+        <fieldset class="ma2 w-33-ns product">
           <input class="ma3 absolute z-5" type="checkbox" id="product2" value="{{.text2}}">
           <label for="product2" class="overflow-hidden">
             <div class="overflow-hidden product-image" style="max-height: 280px">
@@ -54,19 +54,7 @@
             <p>{{.text2}}</p>
           </label>
         </fieldset>
-        <fieldset class="w-33-ns product">
-            <input class="ma3 absolute z-5" type="checkbox" id="product2" value="{{.text2}}">
-            <label for="product2" class="overflow-hidden">
-              <div class="overflow-hidden product-image" style="max-height: 280px">
-                <img src="{{.svg2}}" alt="" class="center db mb3">
-              </div>
-              <p>{{.text2}}</p>
-            </label>
-          </fieldset>
-      </div>
-
-      <div class="flex-ns mhn2-ns mb3">
-        <fieldset class="w-33-ns product">
+        <fieldset class="ma2 w-33-ns product">
           <input class="ma3 absolute z-5" type="checkbox" id="product3" value="{{.text3}}">
           <label for="product3" class="overflow-hidden">
             <div class="overflow-hidden product-image" style="max-height: 280px">
@@ -75,7 +63,9 @@
             <p>{{.text3}}</p>
           </label>
         </fieldset>
-        <fieldset class="w-33-ns product">
+      </div>
+      <div class="flex-ns mhn2-ns">
+        <fieldset class="ma2 w-33-ns product">
           <input class="ma3 absolute z-5" type="checkbox" id="product4" value="{{.text4}}">
           <label for="product4" class="overflow-hidden">
             <div class="overflow-hidden product-image" style="max-height: 280px">
@@ -84,17 +74,54 @@
             <p>{{.text4}}</p>
           </label>
         </fieldset>
-        <fieldset class="w-33-ns product">
-            <input class="ma3 absolute z-5" type="checkbox" id="product4" value="{{.text4}}">
-            <label for="product4" class="overflow-hidden">
-              <div class="overflow-hidden product-image" style="max-height: 280px">
-                <img src="{{.svg4}}" alt="" class="center db mb3">
-              </div>
-              <p>{{.text4}}</p>
-            </label>
-          </fieldset>
+        <fieldset class="ma2 w-33-ns product">
+          <input class="ma3 absolute z-5" type="checkbox" id="product5" value="{{.text5}}">
+          <label for="product5" class="overflow-hidden">
+            <div class="overflow-hidden product-image" style="max-height: 280px">
+              <img src="{{.svg5}}" alt="" class="center db mb3">
+            </div>
+            <p>{{.text5}}</p>
+          </label>
+        </fieldset>
+        <fieldset class="ma2 w-33-ns product">
+          <input class="ma3 absolute z-5" type="checkbox" id="product6" value="{{.text6}}">
+          <label for="product6" class="overflow-hidden">
+            <div class="overflow-hidden product-image" style="max-height: 280px">
+              <img src="{{.svg6}}" alt="" class="center db mb3">
+            </div>
+            <p>{{.text6}}</p>
+          </label>
+        </fieldset>
       </div>
-
+      <div class="flex-ns mhn2-ns">
+        <fieldset class="ma2 w-33-ns product">
+          <input class="ma3 absolute z-5" type="checkbox" id="product7" value="{{.text7}}">
+          <label for="product7" class="overflow-hidden">
+            <div class="overflow-hidden product-image" style="max-height: 280px">
+              <img src="{{.svg7}}" alt="" class="center db mb3">
+            </div>
+            <p>{{.text7}}</p>
+          </label>
+        </fieldset>
+        <fieldset class="ma2 w-33-ns product">
+          <input class="ma3 absolute z-5" type="checkbox" id="product8" value="{{.text8}}">
+          <label for="product8" class="overflow-hidden">
+            <div class="overflow-hidden product-image" style="max-height: 280px">
+              <img src="{{.svg8}}" alt="" class="center db mb3">
+            </div>
+            <p>{{.text8}}</p>
+          </label>
+        </fieldset>
+        <fieldset class="ma2 w-33-ns product" style="visibility: hidden;">
+          <input class="ma3 absolute z-5" type="checkbox" id="product9" value="{{.text9}}">
+          <label for="product9" class="overflow-hidden">
+            <div class="overflow-hidden product-image" style="max-height: 280px">
+              <img src="{{.svg9}}" alt="" class="center db mb3">
+            </div>
+            <p>{{.text9}}</p>
+          </label>
+        </fieldset>
+      </div>
       {{ if .buttonText }}
       <div class="dn tc">
         <a href="{{.buttonLink}}" class="btn raise">{{.buttonText}}</a>
