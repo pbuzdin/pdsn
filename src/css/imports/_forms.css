@@ -88,7 +88,7 @@ label {
   transform: none;
 }
 .products input[type=checkbox] + label > .selector {
-  padding: var(--spacing-extra-small) var(--spacing-small);
+  padding-left: 1rem;
   transform: translateX(100%);
   transition: transform 0.3s;
   position: absolute;
