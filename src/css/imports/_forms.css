@@ -73,8 +73,10 @@ label {
   cursor: pointer;
   padding-top: 60px;
 }
-.products input,
-.products input:focus {
+.products input[type=checkbox],
+.products input[type=checkbox]:focus,
+.products input[type=radio],
+.products input[type=radio]:focus {
   background: inherit;
   box-shadow: inherit;
   width: 20px;
