@@ -115,6 +115,7 @@ label {
 .product .selector input + label {
   padding: var(--spacing-extra-small) var(--spacing-small);
   transition: background-color 0.3s;
+  box-shadow: none;
 }
 
 .product .selector input:checked + label {

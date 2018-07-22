@@ -223,9 +223,9 @@
             <p>{{.text5}}</p>
             <div class="flex-ns flex-wrap bt selector">
                 <p>Выберите количество:</p>
-                <div class="measure">
+                <div class="flex h-25">
                   <input type="number" name="product5Amount" id="product5Amount" value="" class="input-reset bg-white ba b--black-20 pa2 mb2 db w-20" min="10" max="1000" step="1" placeholder="10">
-                  <label class="f6 b db mb2" for="product5Amount5">кг &mdash; 100 &#8381;</label>
+                  <label class="f6 b db mb2" for="product5Amount">кг &mdash; 100 &#8381;</label>
                 </div>
               </div>
           </label>
@@ -274,6 +274,7 @@
         <a href="{{.buttonLink}}" class="btn raise">{{.buttonText}}</a>
       </div>
       {{ end }}
+      <button type="submit">Отправить заказ</button>
     </form>
   </div>
 </div>
