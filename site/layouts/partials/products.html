@@ -2,7 +2,7 @@
   <div class="ph3 mw7 center">
     <h2 class="f2 b lh-title mt0 mb2">{{.heading}}</h2>
     <p class="mt0 mb4 mw-100">{{.description}}</p>
-    <form>
+    <form id="gform" method="POST" class="" action="https://script.google.com/macros/s/AKfycbzBrrNPXxPHdM6U8tz8KePcYe_RmP5c7Cyd4q2REQ/exec">
       <div class="flex-ns mhn2-ns">
         <fieldset class="ma2 w-33-ns product">
           <input class="ma3 absolute z-5" type="checkbox" id="product1" value="{{.text1}}">
@@ -224,8 +224,8 @@
             <div class="flex-ns flex-wrap bt selector">
                 <p>Выберите количество:</p>
                 <div class="flex h-25">
-                  <input type="number" name="product5Amount" id="product5Amount" value="" class="input-reset bg-white ba b--black-20 pa2 mb2 db w-20" min="10" max="1000" step="1" placeholder="10">
-                  <label class="f6 b db mb2" for="product5Amount">кг &mdash; 100 &#8381;</label>
+                  <input type="number" name="{{.text5}}" id="product5Amount" value="" class="input-reset bg-white ba b--black-20 pa2 mb2 db w-20" min="10" max="1000" step="1" placeholder="10">
+                  <label class="f6 b db mb2" for="{{.text5}}">кг &mdash; 100 &#8381;</label>
                 </div>
               </div>
           </label>
@@ -276,5 +276,10 @@
       {{ end }}
       <button type="submit">Отправить заказ</button>
     </form>
+    <div style="display:none;" id="thankyou_message">
+        <h2><em>Thanks</em> for contacting us!
+          We will get back to you soon!</h2>
+      </div>
+      <script data-cfasync="false" src="https://cdn.rawgit.com/dwyl/learn-to-send-email-via-google-script-html-no-server/master/form-submission-handler.js"></script>
   </div>
 </div>
