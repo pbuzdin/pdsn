@@ -114,6 +114,9 @@ label {
 .product:hover {
   border-color: var(--primary)
 }
+.product-image {
+  height: 300px;
+}
 .product .selector input,
 .product .selector input + label {
   padding: var(--spacing-extra-small) var(--spacing-small);
